@@ -23,7 +23,7 @@ export default function Home() {
   async function handleGreetings() {
     setLoading(true);
     axios
-      .get("/api/test")
+      .get("/api/greetings")
       .then((res) => {
         console.log(res.data);
         setLoading(false);
