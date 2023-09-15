@@ -1,6 +1,5 @@
 "use client";
 
-import { inngest } from "@/inngest/client";
 import axios from "axios";
 import { useState } from "react";
 
@@ -22,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <div className="p-10">
+    <div className="h-screen w-screen flex justify-center items-center">
       <button
         disabled={loading}
         onClick={handleClick}
